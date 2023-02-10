@@ -8,4 +8,4 @@ Update  temp from a sensor of Narodmon and conclusion of indications to Rainmete
 Общий алгоритм:
 1. Запрос и получение ответа с сервера narodmon.ru
 2. Обработка запроса
-3. Редиктирование xml файла-источника значения текущей температуры виджета Rainmeter
+3. Редиктирование xml файла-источника: изменение значения текущей температуры виджета Rainmeter
