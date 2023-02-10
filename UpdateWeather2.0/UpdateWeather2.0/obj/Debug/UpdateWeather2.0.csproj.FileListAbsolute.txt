@@ -1,0 +1,10 @@
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\bin\Debug\UpdateWeather2.0.exe.config
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\bin\Debug\UpdateWeather2.0.exe
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\bin\Debug\UpdateWeather2.0.pdb
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\obj\Debug\UpdateWeather2.0.csprojAssemblyReference.cache
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\obj\Debug\UpdateWeather2._0.Form1.resources
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\obj\Debug\UpdateWeather2.0.csproj.GenerateResource.cache
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\obj\Debug\UpdateWeather2.0.csproj.CoreCompileInputs.cache
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\obj\Debug\UpdateWeather2.0.exe
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\obj\Debug\UpdateWeather2.0.pdb
+C:\Users\Aleksei\Desktop\Программирование\Projects C Sharp\UpdateWeather2.0\UpdateWeather2.0\UpdateWeather2.0\obj\Debug\UpdateWeather2.Properties.Resources.resources

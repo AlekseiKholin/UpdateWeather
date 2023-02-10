@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weather ver="2.0">
+  <head>
+    <locale>en_US</locale>
+    <form>MEDIUM</form>
+    <ut>C</ut>
+    <ud>km</ud>
+    <us>km/h</us>
+    <up>mb</up>
+    <ur>mm</ur>
+  </head>
+  <loc id="RSXX6200">
+    <dnam>Sayanogorsk, KK, Russia</dnam>
+    <tm>7:54 AM</tm>
+    <lat>53.10</lat>
+    <lon>91.39</lon>
+    <sunr>5:59 AM</sunr>
+    <suns>7:52 PM</suns>
+    <zone>7</zone>
+  </loc>
+  <cc>
+    <lsup>4/14/19 7:00 AM KRAT</lsup>
+    <obst>Ermakovskoe, KK, RS</obst>
+    <tmp>-17</tmp>
+    <flik>0</flik>
+    <t>Mostly Cloudy</t>
+    <icon>28</icon>
+  </cc>
+</weather>
