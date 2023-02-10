@@ -17,7 +17,7 @@ namespace UpdateWeather2._0
 {
     public partial class Form1 : Form
     {
-        static string id;  //default Id 24361
+        static string id;  
         static string path; //default path C:/Users/Aleksei/Documents/Rainmeter/Skins/Harmattan_custom/Weather/Individual/Today/RSXX6200.xml
         static double temp;
         static int period;
@@ -47,9 +47,9 @@ namespace UpdateWeather2._0
             if (WindowState == FormWindowState.Minimized)
             {
                 // прячем наше окно из панели
-                //this.ShowInTaskbar = false;
+                this.ShowInTaskbar = false;
                 // делаем нашу иконку в трее активной
-                //notifyIcon1.Visible = true;
+                notifyIcon1.Visible = true;
             }
         }
 
@@ -68,20 +68,6 @@ namespace UpdateWeather2._0
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show("gf");
-
-            /*
-           //Скрываем форму полностью
-
-           // Убираем кнопки свернуть, развернуть, закрыть.
-           this.ControlBox = false;
-           // Убираем заголовок.
-           this.Text = "";
-           //скрыть с панели задач:
-           this.ShowInTaskbar = false;
-           //делаем окно прозрачным
-           this.Opacity = 0;
-           */
 
             this.WindowState = FormWindowState.Minimized;
             // прячем наше окно из панели
@@ -201,7 +187,7 @@ namespace UpdateWeather2._0
                     // Запрос инф. на сервере Narodmon 
 
                     string Urlstart = "http://narodmon.ru/api/sensorsValues?sensors=";
-                    string Urlend = "&uuid=ff77aecd1144b95317196a89fc984609&api_key=phNPbw7uhyq73";
+                    string Urlend = "ваш ключ";
                     string Url = Urlstart + id + Urlend;
 
                     WebRequest req = WebRequest.Create(Url);
@@ -210,11 +196,6 @@ namespace UpdateWeather2._0
                     StreamReader sr = new StreamReader(stream);
                     string Out = sr.ReadToEnd();
                     sr.Close();
-
-                    Console.WriteLine(Out);
-
-                    // {"sensors":[{"id":24361,"type":1,"value":14.9,"time":1586932833,"changed":1586932833,"trend":0}]}
-                    //string Out = "{ \"sensors\":[{\"id\":24361,\"type\":1,\"value\":14.9,\"time\":1586688031,\"changed\":1586688031,\"trend\":0}]}";
 
                     // Обработка запроса 
                     string val = Out.Split(':')[4];
@@ -230,7 +211,6 @@ namespace UpdateWeather2._0
                     XElement cc = weather.Element("cc");
                     XElement tmp = cc.Element("tmp");
                     tmp.SetValue(temp);
-                    //руMessageBox.Show("ok");
                     doc.Save(path);
 
                     connect = true;
@@ -238,7 +218,7 @@ namespace UpdateWeather2._0
                 catch (Exception e)
                 {
                     //Console.WriteLine("Ошибка записи файла");
-                    //MessageBox.Show(e.Message + "\r\n" + "Приложение будет остановлено");
+                    MessageBox.Show(e.Message + "\r\n" + "Приложение будет остановлено");
 
                     errorcount = errorcount + 1;
 
@@ -246,14 +226,10 @@ namespace UpdateWeather2._0
                     {
                         MessageBox.Show(e.Message);
                     }
-                    
-                    //delay 3 sec
-                    //Thread.Sleep(3000);
 
                     connect = false;
-
-                    //exit = true;
-                    //Application.Exit();
+                    exit = true;
+                    Application.Exit();
 
                 } 
 
